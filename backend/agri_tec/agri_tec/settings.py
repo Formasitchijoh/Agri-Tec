@@ -78,9 +78,12 @@ WSGI_APPLICATION = 'agri_tec.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'agritec',
+            'USER': 'postgres',
+            'PASSWORD': 'password',  # optional if you set a password
+            'HOST': 'localhost',
+        }
 }
 
 
