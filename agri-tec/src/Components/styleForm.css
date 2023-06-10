@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+      "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+      sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration-skip-ink: "auto";
+  }
+  
+  :root {
+    --gray-900: #1a202c;
+    --gray-800: #2d3748;
+    --gray-700: #4a5568;
+    --gray-600: #718096;
+    --gray-500: #a0aec0;
+    --gray-400: #cbd5e0;
+    --gray-300: #e2e8f0;
+    --gray-200: #edf2f7;
+    --gray-100: #f7fafc;
+    --red-100: #fff5f5;
+    --red-200: #fed7d7;
+    --red-300: #feb2b2;
+    --red-400: #fc8181;
+    --red-500: #f56565;
+    --red-600: #e53e3e;
+    --red-700: #c53030;
+    --red-800: #9b2c2c;
+    --red-900: #742a2a;
+    --blue-100: #ebf8ff;
+    --blue-200: #bee3f8;
+    --blue-300: #90cdf4;
+    --blue-400: #63b3ed;
+    --blue-500: #4299e1;
+    --blue-600: #3182ce;
+    --blue-700: #2b6cb0;
+    --blue-800: #2c5282;
+    --blue-900: #2a4365;
+    --white: white;
+    --red: #f56565;
+    --text-decoration-color: var(--gray-400);
+    --text-color: var(--gray-800);
+    --focus-ring-color: var(--blue-500);
+  }
+  
+  body {
+    padding: 0;
+    /* margin: calc((100vh / 50) * 1.563) calc((100vw / 25) * 1.563); */
+    background-color: white;
+    font-weight: 400;
+    line-height: 1.563;
+  }
+  
+  
+  /* Form
+  ––––––––––––––––––––––––––––––––– */
+  label {
+    font-weight: bold;
+    display: flex;
+    font-size: 10px;
+
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="number"] 
+  input[type="password"]{
+    padding: 0.2rem 0.1rem;
+    font-size: 0.8rem;
+    max-width: 100%;
+    border: 2px solid #d4eefd;
+    border-radius: 5px;
+  }
+
+ input[type="password"]{
+  padding: 0.4rem 0.2rem;
+  font-size: 0.8rem;
+  width: 100%;
+  border: 2px solid #d4eefd;
+  border-radius: 5px;
+ font-size: 200;
+ }
+  
+ 
+
+  /*-------------------- my stylings--------------------------------------- */
+  
+  .main{
+    background-color: #f7fff7;
+  }
+  .formik{
+    background-color: #2b6cb0;
+  }
+  .formik-container{ 
+    margin-top: 0.5em;
+    display: block;
+   align-content: center;
+    justify-content: center;
+    width: 85%;
+    max-height: fit-content;
+    background-color: #fafffa;
+    font-size: 20px;
+    padding: 20px;
+    /* margin-left: 10px; */
+  }
+ .radio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+ }
+ .radio button{
+  size: 20px;
+ }
+  .header-text{ 
+    display: block;
+    float: right;
+    margin-bottom: 20px;
+    
+  }
+ 
+  .header-text a{
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #4a5568;
+    margin-top: 1px;
+    
+  }
+  .error{
+    color: #e53e3e;
+    font-size: 10px;
+  }
+  .header-text .opp{
+    margin-top: 10px;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .agreement{
+    font-size: 10px;
+    width: 100%;
+    height:fit-content ;
+    overflow-x: auto;
+  }
+  .left-div{
+    display: none;
+  }
+  .driver{
+    border-style: none;
+
+  }
+ 
+  
+  
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border: 2px solid #ff7d87;
+    box-shadow: none;
+  }
+  .pwd-eye-hide {
+    font-weight: 800;
+    margin-top: 12px;
+    background-color: #fefefe;
+    position: absolute;
+    right: 15%;
+    width: 4%;
+    height: 2%;
+    border-radius: 5px;
+
+  }
+ 
+  .pwd-eye-show {
+    font-weight: 800;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    position: absolute;
+    right: 15%;
+    width: 4%;
+    height: 2%;
+    border-radius: 5px;
+
+  }
+  
+  
+  .main-modal {
+    width: 80%;
+    height: fit-content;
+    margin-top: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   margin-left: 40px;
+    border: 2px solid black;
+    background: transparent;
+    opacity: 0.9;
+    background-color: #1a202c;
+    color: white;
+   font-weight: 1000;
+   
+  }
+
+  .modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 10px;
+
+  }
+  .modal button{
+    width: 20%;
+
+    height: 30px;
+    padding: 5px;
+    border-radius: 5;
+    margin-bottom: 10px;
+
+  }
+  .driver{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .have-account{
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .have-account a{
+    color: #414a5e;
+  }
+  @media screen and (min-width:700px) { 
+    .formik-container{
+      max-width: 60%;
+      padding: 5px;
+      display: block;
+      float: right;
+      float: right;
+      margin: 20px;
+      margin-right: 50px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .driver {
+      display: none;
+    }
+    .opp{
+        margin-top: 2em;
+        margin-left: 3em;
+        background-color: #2a4365;
+    }
+    .opp h1{
+        margin-left: 2em;
+    }
+    .signup-link{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* I learned that when you want to manipulate a particular
+     component on the DOM using css make sure to give it it's
+      perculier name else if it is found in another component
+       you wont be able to decide when it displays and when it doesn't  */
+    .left-div{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff3f3;
+      margin-left: 100px;
+    }
+    .left-div .opportunity{
+      position: absolute;
+      margin-top: 50px;
+      top: 0;
+     margin-left: 20px;
+    }
+    .left-div .image{
+      position:absolute;
+      bottom: 0;
+      top: 50%;
+      width: 30%;
+      height: 50%;
+      margin-top: 100px;
+      margin-left: 40px;
+      border-radius: 6px;
+    }
+    
+    .app-div{
+      width: 70%;
+      height: 90%;
+      display: flex;
+      margin-left: 100px;
+      justify-content: space-around;
+      background-color: #fff3f3;
+      border-radius: 20px;
+  
+    }
+
+    .pwd-eye-hide {
+      font-weight: 800;
+      margin-top: 12px;
+      background-color: #fefefe;
+      position: absolute;
+      right: 32%;
+      width: 2%;
+      height: 2%;
+      border-radius: 5px;
+
+    }
+   
+    .pwd-eye-show {
+      font-weight: 800;
+      margin-top: 12px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      position: absolute;
+      right: 32%;
+      width: 2%;
+      height: 2%;
+      border-radius: 5px;
+
+    }
+    
+    .main-modal {
+      width: 50%;
+      height: fit-content;
+      margin-top: 150px;
+     position: absolute;
+    top: 0;
+    margin-left: 300px;
+    border: 2px solid black;
+    background: transparent;
+    opacity: 0.9;
+    background-color: #6d717a;
+    color: white;
+   font-weight: 1000;
+   
+     
+    }
+    
+  }
+
+  /* custom */
+  input[type="email"],
+  input[type="text"],
+  input[type="number"],
+  input[type="password"]
+  textarea,
+  select {
+    width: 400px;
+  }
+  
+  label {
+    margin-top: 1rem;
+  }
+  
+  label.checkbox {
+    font-weight: normal;
+  }
+  
+  button[type="submit"] {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #414a5e;
+    padding: 5px;
+  }
+  
